@@ -5,29 +5,13 @@ subtitle: Oracle Database Administrator
 ---
 
 ```sh
-▓█████▄  ▄▄▄     ▄▄▄█████▓ ▒█████   ██▀███   ▄▄▄       ▄████▄   ██▓    ▓█████ 
-▒██▀ ██▌▒████▄   ▓  ██▒ ▓▒▒██▒  ██▒▓██ ▒ ██▒▒████▄    ▒██▀ ▀█  ▓██▒    ▓█   ▀ 
-░██   █▌▒██  ▀█▄ ▒ ▓██░ ▒░▒██░  ██▒▓██ ░▄█ ▒▒██  ▀█▄  ▒▓█    ▄ ▒██░    ▒███   
-░▓█▄   ▌░██▄▄▄▄██░ ▓██▓ ░ ▒██   ██░▒██▀▀█▄  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒██░    ▒▓█  ▄ 
-░▒████▓  ▓█   ▓██▒ ▒██▒ ░ ░ ████▓▒░░██▓ ▒██▒ ▓█   ▓██▒▒ ▓███▀ ░░██████▒░▒████▒
- ▒▒▓  ▒  ▒▒   ▓▒█░ ▒ ░░   ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ░▒ ▒  ░░ ▒░▓  ░░░ ▒░ ░
- ░ ▒  ▒   ▒   ▒▒ ░   ░      ░ ▒ ▒░   ░▒ ░ ▒░  ▒   ▒▒ ░  ░  ▒   ░ ░ ▒  ░ ░ ░  ░
- ░ ░  ░   ░   ▒    ░      ░ ░ ░ ▒    ░░   ░   ░   ▒   ░          ░ ░      ░   
-   ░          ░  ░            ░ ░     ░           ░  ░░ ░          ░  ░   ░  ░
- ░                                                    ░                       
-$ cat about.me
-_name: duong duc dat
-_job:  oracle database administrator
+    $ cat about.me
+    _name:      duong duc dat
+    _job:       oracle dba
+    _birth:     24/11
+    _country:   viet nam
+    _fb:        [datoracle](fb.com/datoracle)
+    _skype:     ducdat2411
+    _is_alone:  true
 
 ```
-
-
-Xin chào,
-
-Mình là Đạt, mình tốt nghiệp HV Kỹ thuật Mật mã chuyên ngành An toàn thông tin và hiện tại đang làm DBA tại Techcombank Việt Nam. 
-
-Mình thích tìm hiểu Oracle Database và chia sẻ những điều mà mình khám phá được !!!
-
-Liên hệ với mình ở đây:
-- [Facebook](https://www.facebook.com/DatOracle)
-- [Instagram](https://www.instagram.com/datoracle)
