@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First post!
+title: Các tiêu chí để đánh giá Leader
 image: /img/leader.jpg
 ---
 
