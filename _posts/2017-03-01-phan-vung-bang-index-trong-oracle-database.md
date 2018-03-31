@@ -15,6 +15,7 @@ Phân vùng giải quyết vấn đề quan trọng trong việc hỗ trợ các
 - Phân vùng có thể thực hiện mà không cần sự thay đổi nào trong ứng dụng, không cần viết lại ứng dụng.
 
  ![](/img/table_partition_h1.jpg)
+ 
 _Hình 1. Phân vùng trong bảng._
 
 # Khoá phân vùng (Partition Key)
@@ -36,9 +37,11 @@ Mỗi hàng thuộc bảng đã được phân vùng được gán rõ ràng cho
 - Phân vùng tổng hợp
 
  ![](/img/table_partition_h2.jpg)
+
 _Hình 2. Phân vùng Range, List, Hash_
 
  ![](/img/table_partition_h3.jpg)
+
 _Hình 3. Phân vùng tổng hợp_
 
 ## Phân vùng phạm vi (Range Partition)
