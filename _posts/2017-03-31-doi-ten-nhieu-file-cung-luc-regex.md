@@ -28,3 +28,5 @@ Lệnh này có sẵn trên môi trường Linux, còn trên Mac thì phải cà
 ```sh
 brew install rename
 ```
+
+_- Kipalog -_
