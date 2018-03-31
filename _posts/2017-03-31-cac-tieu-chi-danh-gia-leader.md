@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Các tiêu chí để đánh giá Leader
+subtitle: 
 tags: [TIL]
 comments: true
 bigimg: /img/leader.jpg
