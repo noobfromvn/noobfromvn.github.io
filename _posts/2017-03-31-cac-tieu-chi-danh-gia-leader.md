@@ -14,4 +14,4 @@ Ngày hôm nay, ngồi nói chuyện với sếp, mình học được 3 tiêu c
 
 Leading là một việc cực kỳ thử thách. Ai cũng sẽ phải học cách để lead người khác (không chỉ là trong công ty, tổ chức, mà còn trong gia đình, người cha người mẹ cũng chính là người lead cho con cái, anh chị sẽ là người lead cho các em)
 
-_Kipalog_
+_- Kipalog -_
