@@ -15,7 +15,7 @@ Phân vùng giải quyết vấn đề quan trọng trong việc hỗ trợ các
 - Phân vùng có thể thực hiện mà không cần sự thay đổi nào trong ứng dụng, không cần viết lại ứng dụng.
 
  ![](/img/table_partition_h1.jpg)
- 
+
 _Hình 1. Phân vùng trong bảng._
 
 # Khoá phân vùng (Partition Key)
@@ -49,8 +49,8 @@ Phân vùng phạm vi dữ liệu dựa trên phạm vi của khoá phân vùng 
 Khi sử dụng phân vùng cần xem xét các nguyên tắc sau:
 - Mỗi phân vùng đều có một mệnh đề GIÁ TRỊ NHỎ HƠN, không bao gồm cận trên. Bất kỳ giá trị nhị phân nào của khoá phân vùng lớn hơn hoặc bằng nó đều thuộc phân vùng tiếp theo cao hơn.
 - Một giá trị MAXVALUES (lớn nhất theo nghĩa đen) được định nghĩa cho phân vùng cao nhất. MAXVALUES định nghĩa cho một giá trị ảo vô hạn, lớn hơn bất kỳ giá trị khoá phân vùng nào khác, bao gồm cả NULL.
-Ví dụ tạo một bảng `sale_range` được phân vùng phạm vi theo trường `sale_date`:
 
+_Ví dụ tạo một bảng `sale_range` được phân vùng phạm vi theo trường `sale_date`:_
 ```sql
 	CREATE TABLE sales_range 
 	(salesman_id NUMBER(5), 
