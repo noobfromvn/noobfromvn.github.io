@@ -2,11 +2,10 @@
 layout: post
 title: Đổi tên nhiều file cùng một lúc dùng Regex
 subtitle: 
+bigimg: /img/xkcd-regex.jpg
 tags: [TIL]
 comments: true
 ---
-
-![Regex](/img/xkcd-regex.jpg)
 
 Giả sử có một folder chứa 3 file có tên na ná nhau nhưng khác phần đuôi và khác luôn kiểu file như sau:
 ```sh
