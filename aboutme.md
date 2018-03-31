@@ -2,7 +2,7 @@
 layout: page
 title: Dương Đức Đạt
 subtitle: Oracle Database Administrator
-bigimg: /img/we_can_see_you.png
+bigimg: /img/matrix.jpg
 ---
 
 ```sh
