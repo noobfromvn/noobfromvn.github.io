@@ -52,18 +52,18 @@ Khi sử dụng phân vùng cần xem xét các nguyên tắc sau:
 Ví dụ tạo một bảng `sale_range` được phân vùng phạm vi theo trường `sale_date`:
 
 ```sql
-CREATE TABLE sales_range 
-(salesman_id NUMBER(5), 
-salesman_name VARCHAR2(30), 
-sales_amount NUMBER(10), 
-sales_date DATE)
-PARTITION BY RANGE(sales_date) 
-(
-PARTITION sales_jan2000 VALUES LESS THAN(TO_DATE('02/01/2000','DD/MM/YYYY')),
-PARTITION sales_feb2000 VALUES LESS THAN(TO_DATE('03/01/2000','DD/MM/YYYY')),
-PARTITION sales_mar2000 VALUES LESS THAN(TO_DATE('04/01/2000','DD/MM/YYYY')),
-PARTITION sales_apr2000 VALUES LESS THAN(TO_DATE('05/01/2000','DD/MM/YYYY'))
-);
+	CREATE TABLE sales_range 
+	(salesman_id NUMBER(5), 
+	salesman_name VARCHAR2(30), 
+	sales_amount NUMBER(10), 
+	sales_date DATE)
+	PARTITION BY RANGE(sales_date) 
+	(
+	PARTITION sales_jan2000 VALUES LESS THAN(TO_DATE('02/01/2000','DD/MM/YYYY')),
+	PARTITION sales_feb2000 VALUES LESS THAN(TO_DATE('03/01/2000','DD/MM/YYYY')),
+	PARTITION sales_mar2000 VALUES LESS THAN(TO_DATE('04/01/2000','DD/MM/YYYY')),
+	PARTITION sales_apr2000 VALUES LESS THAN(TO_DATE('05/01/2000','DD/MM/YYYY'))
+	);
 ```
 
 ## Phân vùng danh sách (List Partition)
@@ -72,19 +72,19 @@ Phân vùng theo danh sách cho phép chỉ rõ hàng nào thuộc phân vùng n
 
 Ví dụ sau, phân vùng bảng bán hàng theo khu vực:
 ```sql
-CREATE TABLE sales_list
-(salesman_id NUMBER(5), 
-salesman_name VARCHAR2(30),
-sales_state VARCHAR2(20),
-sales_amount NUMBER(10), 
-sales_date DATE)
-PARTITION BY LIST(sales_state)
-(
-PARTITION sales_west VALUES('California', 'Hawaii'),
-PARTITION sales_east VALUES ('New York', 'Virginia', 'Florida'),
-PARTITION sales_central VALUES('Texas', 'Illinois')
-PARTITION sales_other VALUES(DEFAULT)
-);
+	CREATE TABLE sales_list
+	(salesman_id NUMBER(5), 
+	salesman_name VARCHAR2(30),
+	sales_state VARCHAR2(20),
+	sales_amount NUMBER(10), 
+	sales_date DATE)
+	PARTITION BY LIST(sales_state)
+	(
+	PARTITION sales_west VALUES('California', 'Hawaii'),
+	PARTITION sales_east VALUES ('New York', 'Virginia', 'Florida'),
+	PARTITION sales_central VALUES('Texas', 'Illinois')
+	PARTITION sales_other VALUES(DEFAULT)
+	);
 ```
 ## Phân vùng băm (Hash Parition)
 Phân vùng băm dễ dàng cho phép phân vùng dữ liệu mà không phù hợp với phân vùng phạm vi và phân vùng danh sách. Phân vùng băm dễ dàng thực hiện với cú pháp đơn giản. Phân vùng băm tốt hơn sơ với phân vùng phạm vi khi:
@@ -97,14 +97,14 @@ Các khái nhiệm tách, gỡ, gộp không áp dụng cho phân vùng băm. Th
 
 _Ví dụ về phân vùng băm:_
 ```sql
-CREATE TABLE sales_hash
-(salesman_id NUMBER(5),
-salesman_name VARCHAR2(30),
-sales_amount NUMBER(10),
-week_no NUMBER(2))
-PARTITION BY HASH(salesman_id)
-PARTITIONS 4
-STORE IN (data1, data2, data3, data4);
+	CREATE TABLE sales_hash
+	(salesman_id NUMBER(5),
+	salesman_name VARCHAR2(30),
+	sales_amount NUMBER(10),
+	week_no NUMBER(2))
+	PARTITION BY HASH(salesman_id)
+	PARTITIONS 4
+	STORE IN (data1, data2, data3, data4);
 ```
 
 ## Phân vùng tổng hợp (Composite Partition)
@@ -113,22 +113,22 @@ Phân vùng tổng hợp hỗ trợ các hành động như thêm phân vùng ph
 
 _Ví dụ tạo phân vùng tổng hợp phạm vi-băm:_
 ```sql
-CREATE TABLE sales_composite 
-(salesman_id NUMBER(5), 
-salesman_name VARCHAR2(30), 
-sales_amount NUMBER(10), 
-sales_date DATE)
-PARTITION BY RANGE(sales_date) 
-SUBPARTITION BY HASH(salesman_id)
-SUBPARTITION TEMPLATE(
-SUBPARTITION sp1 TABLESPACE data1,
-SUBPARTITION sp2 TABLESPACE data2,
-SUBPARTITION sp3 TABLESPACE data3,
-SUBPARTITION sp4 TABLESPACE data4)
-(PARTITION sales_jan2000 VALUES LESS THAN(TO_DATE('02/01/2000','DD/MM/YYYY'))
-PARTITION sales_feb2000 VALUES LESS THAN(TO_DATE('03/01/2000','DD/MM/YYYY'))
-PARTITION sales_mar2000 VALUES LESS THAN(TO_DATE('04/01/2000','DD/MM/YYYY'))
-PARTITION sales_apr2000 VALUES LESS THAN(TO_DATE('05/01/2000','DD/MM/YYYY'))
-PARTITION sales_may2000 VALUES LESS THAN(TO_DATE('06/01/2000','DD/MM/YYYY')));
+	CREATE TABLE sales_composite 
+	(salesman_id NUMBER(5), 
+	salesman_name VARCHAR2(30), 
+	sales_amount NUMBER(10), 
+	sales_date DATE)
+	PARTITION BY RANGE(sales_date) 
+	SUBPARTITION BY HASH(salesman_id)
+	SUBPARTITION TEMPLATE(
+	SUBPARTITION sp1 TABLESPACE data1,
+	SUBPARTITION sp2 TABLESPACE data2,
+	SUBPARTITION sp3 TABLESPACE data3,
+	SUBPARTITION sp4 TABLESPACE data4)
+	(PARTITION sales_jan2000 VALUES LESS THAN(TO_DATE('02/01/2000','DD/MM/YYYY'))
+	PARTITION sales_feb2000 VALUES LESS THAN(TO_DATE('03/01/2000','DD/MM/YYYY'))
+	PARTITION sales_mar2000 VALUES LESS THAN(TO_DATE('04/01/2000','DD/MM/YYYY'))
+	PARTITION sales_apr2000 VALUES LESS THAN(TO_DATE('05/01/2000','DD/MM/YYYY'))
+	PARTITION sales_may2000 VALUES LESS THAN(TO_DATE('06/01/2000','DD/MM/YYYY')));
 ```
 còn tiếp ...
