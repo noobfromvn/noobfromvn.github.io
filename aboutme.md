@@ -2,6 +2,7 @@
 layout: page
 title: Dương Đức Đạt
 subtitle: Oracle Database Administrator
+bigimg: /img/we_can_see_you.jpg
 ---
 
 ```sh
@@ -10,8 +11,7 @@ subtitle: Oracle Database Administrator
     _job:       oracle dba
     _birth:     24/11
     _country:   viet nam
-    _fb:        [datoracle](fb.com/datoracle)
+    _fb:        datoracle
     _skype:     ducdat2411
     _is_alone:  true
-
 ```
