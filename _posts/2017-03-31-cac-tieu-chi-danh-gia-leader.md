@@ -2,6 +2,7 @@
 layout: post
 title: Các tiêu chí để đánh giá Leader
 tags: [TIL]
+comments: true
 bigimg: /img/leader.jpg
 ---
 
