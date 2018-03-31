@@ -51,6 +51,7 @@ Khi sử dụng phân vùng cần xem xét các nguyên tắc sau:
 - Một giá trị MAXVALUES (lớn nhất theo nghĩa đen) được định nghĩa cho phân vùng cao nhất. MAXVALUES định nghĩa cho một giá trị ảo vô hạn, lớn hơn bất kỳ giá trị khoá phân vùng nào khác, bao gồm cả NULL.
 
 _Ví dụ tạo một bảng `sale_range` được phân vùng phạm vi theo trường `sale_date`:_
+
 ```sql
 	CREATE TABLE sales_range 
 	(salesman_id NUMBER(5), 
@@ -70,7 +71,8 @@ _Ví dụ tạo một bảng `sale_range` được phân vùng phạm vi theo tr
 Phân vùng theo danh sách cho phép chỉ rõ hàng nào thuộc phân vùng nào. Khác với phân vùng theo phạm vi, phân vùng theo danh sách chỉ rõ giá trị cho khoá phân vùng.
 Ưu điểm của phân vùng danh sách là có thể nhóm và tổ chức các dữ liệu chưa được sắp xếp hoặc dữ liệu không liên quan một cách tự nhiên.
 
-Ví dụ sau, phân vùng bảng bán hàng theo khu vực:
+_Ví dụ sau, phân vùng bảng bán hàng theo khu vực:_
+
 ```sql
 	CREATE TABLE sales_list
 	(salesman_id NUMBER(5), 
@@ -96,6 +98,7 @@ Phân vùng băm dễ dàng cho phép phân vùng dữ liệu mà không phù h�
 Các khái nhiệm tách, gỡ, gộp không áp dụng cho phân vùng băm. Thay vào đó phân vùng băm có thể được bổ sung và kết hợp lại.
 
 _Ví dụ về phân vùng băm:_
+
 ```sql
 	CREATE TABLE sales_hash
 	(salesman_id NUMBER(5),
@@ -112,6 +115,7 @@ Phân vùng tổng hợp phân chia dữ liệu bằng cách sử dụng phân v
 Phân vùng tổng hợp hỗ trợ các hành động như thêm phân vùng phạm vi mới, nhưng cũng cung cấp mức độ cao hơn như DML song song, chi tiết hơn về vị trí dữ liệu trong phân vùng phụ.
 
 _Ví dụ tạo phân vùng tổng hợp phạm vi-băm:_
+
 ```sql
 	CREATE TABLE sales_composite 
 	(salesman_id NUMBER(5), 
