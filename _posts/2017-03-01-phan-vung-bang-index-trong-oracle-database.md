@@ -13,6 +13,7 @@ Phân vùng giải quyết vấn đề quan trọng trong việc hỗ trợ các
 - Phân vùng làm giảm đáng kể các ảnh hưởng bởi thời gian bảo trì.
 - Phân vùng độc lập cho các hoạt động bảo trì phân vùng, cho phép đồng thời bảo trì trên nhiều phân vùng bảng hoặc chỉ mục khác nhau. Có thể chạy đồng thời các hành động SELECT, DML đối với phân vùng mà không ảnh hưởng đến quá trình bảo trì.
 - Phân vùng có thể thực hiện mà không cần sự thay đổi nào trong ứng dụng, không cần viết lại ứng dụng.
+
  ![](/img/table_partition_h1.jpg)
 _Hình 1. Phân vùng trong bảng._
 
@@ -33,8 +34,10 @@ Mỗi hàng thuộc bảng đã được phân vùng được gán rõ ràng cho
 - Phân vùng theo danh sách (List Partition)
 - Phân vùng Hash
 - Phân vùng tổng hợp
+
  ![](/img/table_partition_h2.jpg)
 _Hình 2. Phân vùng Range, List, Hash_
+
  ![](/img/table_partition_h3.jpg)
 _Hình 3. Phân vùng tổng hợp_
 
