@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: $ whoami
+title: About Dat
+subtitle: Oracle Database Administrator
 ---
 
 Xin chào,
