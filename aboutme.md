@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Dat
+title: Dương Đức Đạt
 subtitle: Oracle Database Administrator
 ---
 
@@ -8,4 +8,8 @@ Xin chào,
 
 Mình là Đạt, mình tốt nghiệp HV Kỹ thuật Mật mã chuyên ngành An toàn thông tin và hiện tại đang làm DBA tại Techcombank Việt Nam. 
 
-Mặc dù học An toàn thông tin cũng ra gì đấy, cơ mà mình lại có duyên với Oracle. hehe
+Mình thích tìm hiểu Oracle Database và chia sẻ những điều mà mình khám phá được !!!
+
+Liên hệ với mình ở đây:
+- [Facebook](https://www.facebook.com/DatOracle)
+- [Instagram](https://www.instagram.com/datoracle)
