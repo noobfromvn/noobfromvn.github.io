@@ -3,7 +3,7 @@ layout: post
 title: Đổi tên nhiều file cùng một lúc dùng Regex
 subtitle: 
 bigimg: /img/xkcd-regex.jpg
-tags: [TIL]
+tags: [TIL, Linux]
 comments: true
 ---
 
