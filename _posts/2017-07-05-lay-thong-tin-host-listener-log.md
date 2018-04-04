@@ -39,6 +39,8 @@ Mình sử dụng grep và regex. Mình cần làm 2 việc:
 ```
 - Giải thích Regex tý: Regular Expression (biểu thức chính quy - hay Regex) nôm na là một chuỗi ký tự đặc biệt dùng để làm mẫu, giúp tìm kiếm các chuỗi trùng khớp với mẫu đó trong nội dung văn bản nào đó. Cái này mọi người có thể lên Gu gồ tìm hiểu rất hữu ích.
 - Đoạn regex của mình lấy thông tin giữa hai chuỗi `"HOST="` và `")(USER"`
+
+
 2. Khi đã có được một mớ hỗn độn các hostname xếp lần lượt theo từng dòng, trong đó có rất nhiều tên trùng nhau thì giờ mình chỉ việc lấy ra những giá trị duy nhất và đẩy ra một file mới `listener_host_uniq.log`.
 
 ```sh
