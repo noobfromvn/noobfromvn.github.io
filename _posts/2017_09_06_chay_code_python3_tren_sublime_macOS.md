@@ -2,7 +2,6 @@
 layout: post
 title: Chạy code Python3 trực tiếp trên Sublime3 macOS
 subtitle: 
-bigimg: /img/xkcd-regex.jpg
 tags: [TIL, macOS]
 comments: true
 ---
