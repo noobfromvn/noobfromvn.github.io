@@ -30,9 +30,9 @@ Nếu lấy một cách thủ công, mình sẽ cần nhặt ra các hostname �
 Mình sử dụng grep và regex. Mình cần làm 2 việc:
 
 1. Lấy tất cả hostname trong file log sau đó đẩy ra một file mới có tên `listener_host.log`
+
 ```sh
   $ cat listener.log | grep -oP 'HOST=\K.*?(?=\)\(USER)' >> listener_host.log
-
   # grep option
   # -o : Print only the matched (non-empty) parts of a matching line, with each such part on a separate output line.
   # -P : Interpret PATTERN as a Perl regular expression.
@@ -42,9 +42,9 @@ Mình sử dụng grep và regex. Mình cần làm 2 việc:
 - Đoạn regex của mình lấy thông tin giữa hai chuỗi `"HOST="` và `")(USER"`
 
 2. Khi đã có được một mớ hỗn độn các hostname xếp lần lượt theo từng dòng, trong đó có rất nhiều tên trùng nhau thì giờ mình chỉ việc lấy ra những giá trị duy nhất và đẩy ra một file mới `listener_host_uniq.log`.
+
 ```sh
   cat listener_host.log | sort | uniq >> listener_host_uniq.log
-
   # sort - sort lines of text files
   # uniq - report or filter out repeated lines in a file
 ```
