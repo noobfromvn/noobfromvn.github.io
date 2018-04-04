@@ -8,10 +8,9 @@ comments: true
 
 Đối với macOS, mặc định Sublime cho phép mình build code trên python2 khi ta chỉ cần bấm `cmd (⌘) + b`. Khi cần build trên python3, mình cần cấu hình thêm một chút.
 
-- Mở Sublime
-- Chọn Menu Tools -> Build-System -> New Build System
-- Xác định vị trí execute python3 bằng các sử dụng Terminal và gõ lệnh which python3
-
+- Mở **Sublime**
+- Chọn menu **Tools** -> **Build-System** -> **New Build System**
+- Xác định vị trí execute python3 bằng các sử dụng Terminal và gõ lệnh `which python3`
 ```sh
 /Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 ```
@@ -23,6 +22,8 @@ comments: true
 "selector": "source.python"
 }
 ```
-- Lưu file (`cmd (⌘) + s` trên bàn phím) và đặt tên Python-3.6.sublime-build.
+- Lưu file (`cmd (⌘) + s` trên bàn phím) và đặt tên `Python-3.6.sublime-build`.
 
 Bây giờ chuyển sang chế độ build mới, và bạn có thể sử dụng `cmd (⌘) + b` để thực thi code của mình roài.
+
+Dễ ha :D
