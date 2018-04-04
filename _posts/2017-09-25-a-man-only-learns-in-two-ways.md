@@ -9,4 +9,5 @@ comments: true
 
 ![quote](/img/quote.jpg)
 "A man only learns in two ways, one by reading, and the other by association with smarter people."
+
 _*Will Rogers*_
