@@ -18,7 +18,7 @@ Nếu là chủ, khi nhân viên không thấy hạnh phúc, muốn ra đi, tôi
 
 Người làm chủ phải hiểu rằng để thu hút nhân tài họ cần phải có một chế độ đãi ngộ tương xứng và phải tôn trọng người làm việc cho mình. Các công ty ở Silicon Valley cho nhân viên bay business class, ở khách sạn 5 sao, ăn nhà hàng Michelin, còn các công ty Việt Nam sang Silicon Valley tuyển người bằng _"lương thấp, đãi ngộ không có gì, nhưng mà đây là giúp đỡ đất nước mà", khắm chịu không nổi._
 
-Người ta muốn nghỉ việc vì điều kiện làm việc không tốt hoặc có cơ hội khác tốt hơn, chứ chẳng ai muốn nghỉ chỉ để "gây ấn tượng không đẹp đến hình ảnh, uy tín, chất lượng của lao động Việt Nam trong con mắt nhà tuyển dụng nước ngoài". Mà trời ạ, nhà tuyển dụng nước ngoài là cái quái gì mà phải lo họ nghĩ xấu về mình? Thuận mua vừa bán, tuyển dụng nước nào không hiểu được nguyên lý cơ bản đó thì cũng chẳng đáng nghĩ đến làm gì.
+Người ta muốn nghỉ việc vì điều kiện làm việc không tốt hoặc có cơ hội khác tốt hơn, chứ chẳng ai muốn nghỉ chỉ để _"gây ấn tượng không đẹp đến hình ảnh, uy tín, chất lượng của lao động Việt Nam trong con mắt nhà tuyển dụng nước ngoài"_. Mà trời ạ, nhà tuyển dụng nước ngoài là cái quái gì mà phải lo họ nghĩ xấu về mình? Thuận mua vừa bán, tuyển dụng nước nào không hiểu được nguyên lý cơ bản đó thì cũng chẳng đáng nghĩ đến làm gì.
 
 Bà chủ dẫn lời một ông chủ khác:
 > Một tổng giám đốc công ty Việt Nam đứng dậy nói ngay: _“Thách thức lớn mà các công ty Việt Nam phải đối mặt là cách nghĩ lệch lạc về việc làm và lao động đã ăn sâu vào gốc rễ từng gia đình. Còn năng suất, thực sự có thể cải thiện bằng việc đầu tư máy móc, công nghệ và quy trình”._
@@ -28,7 +28,7 @@ Tôi nghĩ thách thức đúng là suy nghĩ lệch lạc, nhưng không phải
 
 Tôi trung thành với công ty của tôi. Tôi không làm gì gây hại cho công ty (ví dụ như bán dữ liệu, công nghệ cho đối thủ). Tôi luôn quảng bá, giới thiệu, khuyến khích người khác sử dụng sản phẩm dịch vụ của công ty. Tôi luôn làm việc hết sức, làm tròn trách nhiệm và hơn thế nữa. Nếu thấy vấn đề không ổn, gây lãng phí, cần phải sửa, tôi sẽ nhảy vào sửa hoặc báo cho người khác, mặc dù có thể đó không phải là việc của tôi. Không có vấn đề gì ở công ty là vấn đề của người khác. Tôi ở trên một chiếc thuyền và tôi sẽ làm tất cả với những người khác để thuyền về đích.
 
-Nhưng trung thành không có nghĩa là tôi phải gắn bó suốt đời. Công ty không phải là gia đình. Mỗi lần nghe sếp nói "chúng ta là một gia đình" tôi bắt đầu đi tìm việc khác. Tôi có bạn ở công ty, nhưng công ty không phải là bạn của tôi. Tôi luôn làm việc hết mình, nhưng tôi cũng luôn cân nhắc các cơ hội khác. Việc đó chẳng có gì là phi đạo đức, vì mối quan hệ giữa hai bên vẫn là thuận mua vừa bán.
+Nhưng trung thành không có nghĩa là tôi phải gắn bó suốt đời. Công ty không phải là gia đình. Mỗi lần nghe sếp nói _"chúng ta là một gia đình"_ tôi bắt đầu đi tìm việc khác. Tôi có bạn ở công ty, nhưng công ty không phải là bạn của tôi. Tôi luôn làm việc hết mình, nhưng tôi cũng luôn cân nhắc các cơ hội khác. Việc đó chẳng có gì là phi đạo đức, vì mối quan hệ giữa hai bên vẫn là thuận mua vừa bán.
 
 Không những yêu cầu người làm thuê phải trung thành một cách vô lý, các ông bà chủ và cả xã hội Việt Nam còn rất xem thường người làm thuê. Tôi tìm trên Google cụm từ _"cũng chỉ là làm thuê"_ thấy có hơn 30 ngàn kết quả. Mới đây một vị giáo sư toán đầu ngành ở Việt Nam tuyên bố _["nếu học tốt mà không sáng tạo chỉ là người đi làm thuê".](http://news.zing.vn/hoc-sinh-viet-nam-gioi-nhung-khong-nhieu-dau-an-tren-dinh-tri-tue-post771143.html)_
 
