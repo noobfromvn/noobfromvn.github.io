@@ -10,11 +10,12 @@ comments: true
 
 - Mở **Sublime**
 - Chọn menu **Tools** -> **Build-System** -> **New Build System**
-- Xác định vị trí execute python3 bằng các sử dụng Terminal và gõ lệnh `which python3`
+- Xác định vị trí execute python3 bằng các sử dụng Terminal và gõ lệnh `which python3`. Kết quả ta được đường dẫn như bên dưới.
 ```sh
+$ which python3
 /Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 ```
-- Dán đoạn code sau vào cửa sổ tạo file mới mở. Chú ý thay thế đúng giá trị đường dẫn python3.
+- Tạo một file mới trong Sublime và dán vào nội dung sau. Chú ý thay thế đúng giá trị đường dẫn python3.
 ```sh
 {
 "cmd": ["/Library/Frameworks/Python.framework/Versions/3.6/bin/python3", "-u", "$file"],
