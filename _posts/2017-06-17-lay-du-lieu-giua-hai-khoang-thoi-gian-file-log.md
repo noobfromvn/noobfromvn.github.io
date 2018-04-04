@@ -38,8 +38,7 @@ Completed checkpoint up to RBA [0xeda.2.10], SCN: 49562407178
 ...
 ```
 
-Bây giờ ta cần lấy log trong 1 khoảng thời gian để kiểm tra:
-Giả sử cần lấy log từ `Mon Dec 19 15:36:40 2016` đến `Mon Dec 19 16:04:30 2016`:
+Bây giờ ta cần lấy log trong 1 khoảng thời gian để kiểm tra. Giả sử cần lấy log từ `Mon Dec 19 15:36:40 2016` đến `Mon Dec 19 16:04:30 2016`:
 ```sh
 sed -n "/Mon Dec 19 15:36:40 2016/,/Mon Dec 19 16:04:30 2016/p" file_name > new_alert.log
 ```
