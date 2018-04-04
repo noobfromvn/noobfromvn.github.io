@@ -5,14 +5,6 @@ tags: [Oracle, Regex, Linux]
 comments: true
 ---
 
-
----
-layout: post
-title: Lấy thông tin các host truy cập vào database thông qua listener log
-tags: [Oracle, Regex, Linux]
-comments: true
----
-
 Hôm nay mình lại chia sẻ về chủ đề lấy thông tin trong một file log rất rất lớn, lần trước mình có chia sẻ về việc cắt nội dung log theo khoảng thời gian, các bạn có thể xem [tại đây](https://datoracle.github.io/2017-06-17-lay-du-lieu-giua-hai-khoang-thoi-gian-file-log/).
 
 OK giờ thì vào chủ đề hôm nay thôi!
