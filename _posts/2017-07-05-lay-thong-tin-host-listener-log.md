@@ -6,7 +6,12 @@ comments: true
 ---
 
 
-Chào các bạn,
+---
+layout: post
+title: Lấy thông tin các host truy cập vào database thông qua listener log
+tags: [Oracle, Regex, Linux]
+comments: true
+---
 
 Hôm nay mình lại chia sẻ về chủ đề lấy thông tin trong một file log rất rất lớn, lần trước mình có chia sẻ về việc cắt nội dung log theo khoảng thời gian, các bạn có thể xem [tại đây](https://datoracle.github.io/2017-06-17-lay-du-lieu-giua-hai-khoang-thoi-gian-file-log/).
 
@@ -36,11 +41,13 @@ Mình sử dụng grep và regex. Mình cần làm 2 việc:
 ```sh
 $ cat listener.log | grep -oP 'HOST=\K.*?(?=\)\(USER)' >> listener_host.log
 ```
-- Grep option:
-```
--o : Print only the matched (non-empty) parts of a matching line, with each such part on a separate output line.
--P : Interpret PATTERN as a Perl regular expression.`
-```
+**Grep option:**
+
+`-o : Print only the matched (non-empty) parts of a matching line, with each such part on a separate output line.`
+
+`-P : Interpret PATTERN as a Perl regular expression.`
+
+
 - Giải thích Regex tý: Regular Expression (biểu thức chính quy - hay Regex) nôm na là một chuỗi ký tự đặc biệt dùng để làm mẫu, giúp tìm kiếm các chuỗi trùng khớp với mẫu đó trong nội dung văn bản nào đó. Cái này mọi người có thể lên Gu gồ tìm hiểu rất hữu ích.
 - Đoạn regex của mình lấy thông tin giữa hai chuỗi `"HOST="` và `")(USER"`
 
@@ -48,8 +55,9 @@ $ cat listener.log | grep -oP 'HOST=\K.*?(?=\)\(USER)' >> listener_host.log
 ```sh
 cat listener_host.log | sort | uniq >> listener_host_uniq.log
 ```
-- sort - sort lines of text files
-- uniq - report or filter out repeated lines in a file
+`sort - sort lines of text files`
+
+`uniq - report or filter out repeated lines in a file`
 
 
 Các bạn có thể kết hợp 2 câu lệnh này thành một câu lệnh, còn mình thì thích làm 2 lần cơ :D
