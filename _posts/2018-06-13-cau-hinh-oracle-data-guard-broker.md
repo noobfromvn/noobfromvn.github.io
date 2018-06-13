@@ -16,7 +16,7 @@ STANDBY db_unique_name : testdr
 
 # CÁCH THỰC HIỆN
 
-## Thiết lập tham số vị trí lưu file cấu hình của Broker
+### Thiết lập tham số vị trí lưu file cấu hình của Broker
 
 Đăng nhập SQL\*Plus với quyền SYSDBA trên cả Primary và Physical Standby database:
 
@@ -25,33 +25,33 @@ export ORACLE_SID=testdb1
 sqlplus / as sysdba
 ```
 
-### Trên Primary database:
+#### Trên Primary database:
 
 ```sql
 ALTER SYSTEM SET DG_BROKER_CONFIG_FILE1='+DATA03/TESTDB/DG_TESTDB_CONFIG1.DAT' SID='*';
 ALTER SYSTEM SET DG_BROKER_CONFIG_FILE2='+DATA03/TESTDB/DG_TESTDB_CONFIG2.DAT' SID='*';
 ```
 
-### Trên Physical Standby database
+#### Trên Physical Standby database
 
 ```sql
 ALTER SYSTEM SET DG_BROKER_CONFIG_FILE1='+DATA03/TESTDR/DG_TESTDR_CONFIG1.DAT' SID='*';
 ALTER SYSTEM SET DG_BROKER_CONFIG_FILE2='+DATA03/TESTDR/DG_TESTDR_CONFIG2.DAT' SID='*';
 ```
 
-## Dừng tiến trình đồng bộ trên Physical Standby database
+### Dừng tiến trình đồng bộ trên Physical Standby database
 
 ```sql
 ALTER DATABASE RECOVER MANAGED STANDBY DATABASE CANCEL;
 ```
 
-## Thực hiện set tham số DG_BROKER_START sang TRUE
+### Thực hiện set tham số DG_BROKER_START sang TRUE
 
 ```sql
 ALTER SYSTEM SET DG_BROKER_START=TRUE SID='*';
 ```
 
-## Tạo cấu hình Broker
+### Tạo cấu hình Broker
 
 Đứng trên một node của Primary, đăng nhập DGMGRL:
 
@@ -68,14 +68,14 @@ PRIMARY DATABASE IS TESTDB
 CONNECT IDENTIFIER IS 'TESTDB'; -- TESTDB là chuỗi kết nối được khai báo trong file $ORACLE_HOME/network/admin/tnsnames.ora
 ```
 
-## Add Physical Standby database
+### Add Physical Standby database
 
 ```sql
 ADD DATABASE TESTDR AS
 CONNECT IDENTIFIER IS 'TESTDR'; -- TESTDR là chuỗi kết nối được khai báo trong file $ORACLE_HOME/network/admin/tnsnames.ora
 ```
 
-## Enable cấu hình
+### Enable cấu hình
 
 ```sql
 ENABLE CONFIGURATION;
@@ -83,12 +83,12 @@ ENABLE CONFIGURATION;
 
 # SWITCHOVER và FAILOVER
 
-## Switchover
+### Switchover
 ```sql
 SWITCHOVER TO TESTDR;
 ```
 
-## Failover
+### Failover
 ```sql
 FAILOVER TO TESTDR;
 ```
@@ -96,13 +96,13 @@ FAILOVER TO TESTDR;
 # MỘT SỐ LỆNH VẬN HÀNH KHÁC
 
 
-## Disable cấu hình
+### Disable cấu hình
 
 ```
 DISABLE CONFIGURATION;
 ```
 
-## Kiểm tra cấu hình Broker
+### Kiểm tra cấu hình Broker
 
 ```
 DGMGRL> SHOW CONFIGURATION
@@ -126,7 +126,7 @@ SHOW CONFIGURATION VERBOSE
 
 ```
 
-## Kiểm tra database
+### Kiểm tra database
 
 ```
 DGMGRL> SHOW DATABASE TESTDB
@@ -166,7 +166,7 @@ SHOW DATABASE VERBOSE TESTDR
 
 ```
 
-## Bật tắt TRANSPORT trên Primary
+### Bật tắt TRANSPORT trên Primary
 
 ```
 EDIT DATABASE TESTDB SET STATE=TRANSPORT-OFF;
@@ -174,7 +174,7 @@ EDIT DATABASE TESTDB SET STATE=TRANSPORT-OFF;
 EDIT DATABASE TESTDB SET STATE=TRANSPORT-ON;
 ```
 
-## Bật tắt APPLY trên Physical Standby
+### Bật tắt APPLY trên Physical Standby
 
 ```
 EDIT DATABASE TESTDR SET STATE=APPLY-OFF;
@@ -182,19 +182,19 @@ EDIT DATABASE TESTDR SET STATE=APPLY-OFF;
 EDIT DATABASE TESTDR SET STATE=APPLY-ON;
 ```
 
-## Thiết lập PROPERTY
+### Thiết lập PROPERTY
 
 ```
 EDIT DATABASE TESTDR SET PROPERTY DelayMins=240;
 ```
 
-## Thiết lập Protection Mode
+### Thiết lập Protection Mode
 
 ```
 EDIT CONFIGURATION SET PROTECTION MODE AS MAXAVAILABILITY;
 ```
 
-## Silent mode
+### Silent mode
 
 
 ```
@@ -202,4 +202,4 @@ dgmgrl -silent / "show database 'testdr'"
 dgmgrl -silent / "show database 'testdb'"
 ```
 
-# MỌI NGƯỜI CÙNG CHIA SẺ KINH NGHIỆM DG BROKER BÊN DƯỚI PHẦN BÌNH LUẬN NHÉ!
+# Mọi người cùng chia sẻ kinh nghiệm DG Broker bên dưới phần bình luận nhé!
