@@ -58,6 +58,9 @@ Sử dụng công cụ có sẵn của Linux sẽ giúp ta thực hiện việc 
 ```sh
 grep -B1 "Deadlock" alert_orcl.log
 
+# Option -B1: Cho phép lấy 1 dòng trước của chuỗi được khớp
+
+# Result
 Mon Jan 22 08:22:10 2018
 Global Enqueue Services Deadlock detected. More info in file
 ```
