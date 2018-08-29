@@ -11,17 +11,13 @@ When we change SYS password on primary database, redo transport service is stopp
 
 ## SYSTEM INFORMATIONS
 
-**----- DC -----**
-
-Host: dc-testdb-01/02
-
-DB Name: testdb
-
-**----- DR -----**
-
-Host: dr-testdb-01/02
-
-DB Name: testdr
++---------+-----------------+-----------------+
+|         | DC              | DR              |
++---------+-----------------+-----------------+
+| Host    | dc-testdb-01/02 | dr-testdb-01/02 |
++---------+-----------------+-----------------+
+| DB Name | testdb          | testdr          |
++---------+-----------------+-----------------+
 
 ## CONFIGURATION STEPS
 
