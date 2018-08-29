@@ -6,15 +6,18 @@ tags: [Oracle, Data Guard]
 comments: true
 ---
 
+> As you know when we create Data Guard Configuration, we must copy password file. Because SYS user is default redo transport user on Data Guard configurations. 
+When we change SYS password on primary database, redo transport service is stopping and we are getting error: `ORA-01031: insufficient privileges`. When redo transport failed for this reason we can recreate standby password file with copy from primary side. Same time we can change redo transport user, by setting REDO_TRANSPORT_USER with SYSOPER privileged user.
+
 ## SYSTEM INFORMATION
 
 **----- DC -----**
-**Host**: dc-testdb-01/02
-**DB Name**: testdb
+Host: dc-testdb-01/02
+DB Name: testdb
 
 **----- DR -----**
-**Host**: dr-testdb-01/02
-**DB Name**: testdr
+Host: dr-testdb-01/02
+DB Name: testdr
 
 ## CONFIGURATION STEPS
 
@@ -56,7 +59,7 @@ REDO_TRANS                     FALSE TRUE  FALSE
 
 ```
 
-### 3) Make log switch to applying redo log that which include create user statement and move password file to standby database.
+### 3) Make log switch to applying redo log that which include create user statement and copy password file to standby database.
 **-- Primary database**
 
 Switch logfile:
