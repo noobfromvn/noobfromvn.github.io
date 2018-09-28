@@ -1,17 +1,16 @@
 ---
 layout: page
-title: Dương Đức Đạt
-subtitle: Oracle Database Administrator
-bigimg: /img/oracle-dba.png
+title: Thu Nguyen
+subtitle: Security Specialist
+bigimg: /img/Security-Specialist-Image-11-29-16.jpg
 ---
 
 ```sh
     $ cat about.me
-    _name:      duong duc dat
-    _job:       oracle dba
-    _birth:     24/11
+    _name:      thu nguyen
+    _job:       security specialist
+    _birth:     15/08
     _country:   viet nam
-    _fb:        datoracle
-    _skype:     ducdat2411
+    _skype:     mr.dangthu1993
     _is_alone:  true
 ```
