@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://datoracle.github.io"
+url: "https://noobfromvn.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Dương Đức Đạt
+title: Thu Nguyen
 
 # Short description of your site
-description: Blogging is fun!
+description: A bad boy!
 
 # --- Navigation bar options --- #
 
@@ -25,10 +25,9 @@ description: Blogging is fun!
 navbar-links:
   About Me: "aboutme"
   Tags:
-    - Oracle: "https://datoracle.github.io/tags/#Oracle"
-    - Linux: "https://datoracle.github.io/tags/#Linux"
-    - #TIL: "https://datoracle.github.io/tags/#TIL"
-    - Life: "https://datoracle.github.io/tags/#Life"
+    - Security: "https://noobfromvn.github.io/tags/#Security"
+    - Books: "https://noobfromvn.github.io/tags/#Books"
+    - Life: "https://noobfromvn.github.io/tags/#Life"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -64,29 +63,28 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: ĐạtOracle
-
+  name: Thu Nguyen
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "ducdat2411@live.com"
-  facebook: datoracle
-  github: datoracle
-  twitter: ducdatduong
-#  reddit: yourname
+  email: "thund2@outlook.com.vn"
+  facebook: mr.dangthu158
+  github: noobfromvn
+  twitter: MrThund
+#  reddit: noobfromvn
 #  google-plus: +asd
-  linkedin: duongducdat
+  linkedin: thund
 #  xing: yourname
 #  stackoverflow: "3943160/"
-#  snapchat: datoracle
-  instagram: datoracle
-#  youtube: user/datoracle
+#  snapchat: noobfromvn
+  instagram: thund158
+#  youtube: user/noobfromvn
 #  spotify: yourname
 #  telephone: +14159998888
-#  steam: datoracle
+#  steam: noobfromvn
 #  twitch: yourname
 #  yelp: yourname
 
@@ -120,7 +118,7 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "datoracle-github-io"
+disqus: noobfromvn
 
 # Facebook App ID
 # fb_app_id: ""
